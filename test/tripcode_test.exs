@@ -25,6 +25,6 @@ defmodule TripcodeTest do
     assert Tripcode.make("&&&&") == "sS3IIIdY12"
     assert Tripcode.make("<<<<") == "wZLr7yNcBc"
     assert Tripcode.make(">>>>") == "FdL1jBqM3g"
-    assert Tripcode.make("\"\"\"\"") == "1rr8HU7DiE"
+    assert Tripcode.make("\"\"\"\"") == "RYRu.UCnt."
   end
 end

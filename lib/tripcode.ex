@@ -20,8 +20,8 @@ defmodule Tripcode do
         _ -> a <> "?"
       end
     end)
-      |> String.replace("&", "&amp;")
       |> String.replace("\"", "&quot;")
+      |> String.replace("&", "&amp;")
       |> String.replace("<", "&lt;")
       |> String.replace(">", "&gt;")
     salt = String.slice(sjis <> "H.", 1..2)
