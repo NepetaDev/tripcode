@@ -10,7 +10,7 @@ by adding `tripcode` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:tripcode, "~> 1.0.1"}
+    {:tripcode, "~> 1.0.2"}
   ]
 end
 ```
