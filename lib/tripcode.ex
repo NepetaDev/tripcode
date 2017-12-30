@@ -13,7 +13,13 @@ defmodule Tripcode do
 
   """
   def make(str) do
-    sjis = :iconv.convert "utf-8", "shift-jis", str
+    sjis = Enum.reduce(String.graphemes(str), "", fn(x, a) ->
+      char = :iconv.convert "utf-8", "shift-jis", x
+      case char != "" do
+        true -> a <> char
+        _ -> a <> "?"
+      end
+    end)
     salt = String.slice(sjis <> "H.", 1..2)
       |> String.replace(~r/[^\.-z]/, ".")
       |> String.replace(":", "A")   #until i figure out something better ;_;
