@@ -5,13 +5,12 @@
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `crypt3` and `tripcode` to your list of dependencies in `mix.exs`:
+by adding `tripcode` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:crypt3, "~> 1.0.4"},
-    {:tripcode, "~> 1.0.0"}
+    {:tripcode, "~> 1.0.1"}
   ]
 end
 ```
