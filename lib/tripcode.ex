@@ -4,12 +4,12 @@ defmodule Tripcode do
   """
 
   @doc """
-  Hello world.
+  Generates a tripcode..
 
   ## Examples
 
-      iex> Tripcode.hello
-      :world
+      iex> Tripcode.make "廨A齬ﾙｲb"
+      "sTrIKeleSs"
 
   """
   def make(str) do

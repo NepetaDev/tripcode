@@ -1,6 +1,6 @@
 # Tripcode
 
-**TODO: Add description**
+4chan tripcodes for Elixir.
 
 ## Installation
 
@@ -11,7 +11,7 @@ by adding `crypt3` and `tripcode` to your list of dependencies in `mix.exs`:
 def deps do
   [
     {:crypt3, "~> 1.0.4"},
-    {:tripcode, "~> 0.1.0"}
+    {:tripcode, "~> 1.0.0"}
   ]
 end
 ```
